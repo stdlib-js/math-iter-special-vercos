@@ -1,0 +1,40 @@
+{
+  "name": "@stdlib/math-iter-special-vercos",
+  "version": "0.0.0",
+  "description": "Create an iterator which computes the versed cosine for each iterated value.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/math-iter-special-vercos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "mathematics",
+    "math",
+    "vercos",
+    "vercosin",
+    "vercosine",
+    "versed cosine",
+    "vcs",
+    "cosine",
+    "cos",
+    "trig",
+    "trigonometry",
+    "radians",
+    "angle",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
