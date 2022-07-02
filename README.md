@@ -34,30 +34,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-iter-special-vercos
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var iterVercos = require( '@stdlib/math-iter-special-vercos' );
+iterVercos = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var iterVercos = require( 'path/to/vendor/umd/math-iter-special-vercos/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.iterVercos;
+})();
+</script>
 ```
 
 #### iterVercos( iterator )
@@ -109,9 +117,14 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var uniform = require( '@stdlib/random-iter-uniform' );
-var iterVercos = require( '@stdlib/math-iter-special-vercos' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 6.28, {
@@ -131,6 +144,11 @@ while ( true ) {
     }
     console.log( v.value );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -235,13 +253,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos
+[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos/tree/umd
 
-[@stdlib/math/iter/special/cos]: https://github.com/stdlib-js/math-iter-special-cos
+[@stdlib/math/iter/special/cos]: https://github.com/stdlib-js/math-iter-special-cos/tree/umd
 
-[@stdlib/math/iter/special/sin]: https://github.com/stdlib-js/math-iter-special-sin
+[@stdlib/math/iter/special/sin]: https://github.com/stdlib-js/math-iter-special-sin/tree/umd
 
-[@stdlib/math/iter/special/versin]: https://github.com/stdlib-js/math-iter-special-versin
+[@stdlib/math/iter/special/versin]: https://github.com/stdlib-js/math-iter-special-versin/tree/umd
 
 <!-- </related-links> -->
 
