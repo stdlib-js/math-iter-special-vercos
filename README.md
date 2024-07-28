@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterVercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@esm/index.mjs';
+import iterVercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@v0.2.2-esm/index.mjs';
 ```
 
 #### iterVercos( iterator )
@@ -111,7 +111,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="module">
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import iterVercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@esm/index.mjs';
+import iterVercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@v0.2.2-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 6.28, {
