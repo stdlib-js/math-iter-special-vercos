@@ -45,32 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/math-iter-special-vercos
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterVercos = require( '@stdlib/math-iter-special-vercos' );
+import iterVercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@deno/mod.js';
 ```
 
 #### iterVercos( iterator )
@@ -78,7 +60,7 @@ var iterVercos = require( '@stdlib/math-iter-special-vercos' );
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes the [versed cosine][@stdlib/math/base/special/vercos].
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
 
 var it = iterVercos( array2iterator( [ 0.0, 1.57 ] ) );
 // returns <Object>
@@ -123,8 +105,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var uniform = require( '@stdlib/random-iter-uniform' );
-var iterVercos = require( '@stdlib/math-iter-special-vercos' );
+import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
+import iterVercos from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-vercos@deno/mod.js';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 6.28, {
@@ -184,7 +166,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -251,13 +233,13 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos
+[@stdlib/math/base/special/vercos]: https://github.com/stdlib-js/math-base-special-vercos/tree/deno
 
-[@stdlib/math/iter/special/cos]: https://github.com/stdlib-js/math-iter-special-cos
+[@stdlib/math/iter/special/cos]: https://github.com/stdlib-js/math-iter-special-cos/tree/deno
 
-[@stdlib/math/iter/special/sin]: https://github.com/stdlib-js/math-iter-special-sin
+[@stdlib/math/iter/special/sin]: https://github.com/stdlib-js/math-iter-special-sin/tree/deno
 
-[@stdlib/math/iter/special/versin]: https://github.com/stdlib-js/math-iter-special-versin
+[@stdlib/math/iter/special/versin]: https://github.com/stdlib-js/math-iter-special-versin/tree/deno
 
 <!-- </related-links> -->
 
